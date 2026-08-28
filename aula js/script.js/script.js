@@ -215,7 +215,7 @@ if (numero > 0) {
     alert("o numero e negativo.");
 } else {
     alert("o numero e zero.");
-} 
+}
 
 
 //Classificação por idade
@@ -231,7 +231,7 @@ if (Number.isNaN(idadeClassificacao) || idadeClassificacao < 0) {
     alert("classificacao: adulto");
 }
 
-alert ("classificacao adulto");
+alert("classificacao adulto");
 
 
 //Par ou Ímpar
@@ -263,17 +263,17 @@ switch (operacao) {
         resultado = num1 + num2;
         alert(`Resultado: ${num1} + ${num2} = ${resultado}`);
         break;
-        
+
     case "-":
         resultado = num1 - num2;
         alert(`Resultado: ${num1} - ${num2} = ${resultado}`);
         break;
-        
+
     case "*":
         resultado = num1 * num2;
         alert(`Resultado: ${num1} * ${num2} = ${resultado}`);
         break;
-        
+
     case "/":
         // Tratamento especial: não é possível dividir por zero na matemática
         if (num2 === 0) {
@@ -283,7 +283,7 @@ switch (operacao) {
             alert(`Resultado: ${num1} / ${num2} = ${resultado}`);
         }
         break;
-        
+
     // Executado caso o usuário digite um símbolo que não seja +, -, * ou /
     default:
         alert("Erro: Operação inválida! Escolha apenas +, -, * ou /.");
@@ -305,18 +305,18 @@ alert(`O maior número digitado foi: ${maior}`);
 
 const valorcompra = Number(prompt("valor total da compra:"))
 
-if(valorcompra > 100) {
+if (valorcompra > 100) {
 
-const desconto = valorcompra * 0.10 //10% do valor
+    const desconto = valorcompra * 0.10 //10% do valor
 
-const valorfinal = valorcompra - desconto
-alert("desconto aplicado! total R$" + valorfinal.toFixed(2))
+    const valorfinal = valorcompra - desconto
+    alert("desconto aplicado! total R$" + valorfinal.toFixed(2))
 
 }
 
-else{
+else {
 
-alert("valor normal: R$" + valorcompra.toFixed(2))
+    alert("valor normal: R$" + valorcompra.toFixed(2))
 
 }
 
@@ -325,7 +325,7 @@ alert("valor normal: R$" + valorcompra.toFixed(2))
 const usuario = prompt("usuario")
 const senhaLogin = prompt("senha")
 
-if (usuario === "admin" && senhaLogin =="1234") {
+if (usuario === "admin" && senhaLogin == "1234") {
     alert("login bem sucedido")
 } else {
     alert("acesso negado")
