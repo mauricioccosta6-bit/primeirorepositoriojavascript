@@ -22,7 +22,7 @@ do {
     console.log("isso VAI aparecer pelo menos 1x");
 } while (num < 5);
 
-// adivinhe o numero (fixo)
+// adivinhe o numero (fixo) */
 const numerosecreto = 8;
 let palpiteEx1;
 let tentativasEx1 = 0;
@@ -154,18 +154,6 @@ if (Number.isNaN(numero)) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //3. Soma dos primeiros N números
 //Solicite um número inteiro positivo ao usuário e calcule a soma de todos os números de 1 até esse valor.
 //Exemplo:
@@ -192,17 +180,6 @@ if (Number.isNaN(n) || n <= 0) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //🟡 Nível Intermediário
 //4. Números pares de 1 a 50
 //Exiba todos os números pares entre 1 e 50, um por linha.
@@ -211,11 +188,6 @@ console.log("Números pares de 1 a 50:");
 for (let i = 2; i <= 50; i += 2) {
     console.log(i);
 }
-
-
-
-
-
 
 
 
@@ -401,6 +373,155 @@ for (let num = 1; num <= 1000; num++) {
         console.log(num);
     }
 }
+
+
+
+
+//ARRAY
+//um array e um tipo de dados que pode armazenar mais de um valor em uma unica variavel
+//sequencialmento em forma de lista
+
+const numeros= [1,2,3,4,5]
+
+const Nomes = ["Ana", "Bruno", "Carlos", "Diana"]
+
+// na minha lista de numeros
+//eu quero a posicao 0
+
+console.log(numeros[2]) //0     
+
+console.log(Nomes[4]) //Diana
+
+
+
+//lenght
+//e uma propriedade que retorna o tamanho do array
+console.log(numeros.length) //5
+
+    for (let i = 0; i < Nomes.length; i++) {
+        
+        console.log(Nomes[i])
+    
+    }
+
+// for of
+const frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"];
+
+for (const fruta of frutas) {
+    console.log(fruta);
+}
+
+
+
+//faca a soma  de todos os numeros do array numeros
+const listaNumeros = [10, 25, 8, 42, 15, 7];
+
+let soma = 0;
+//of listaNumeros - percorra toda a lista!
+for (const numero of listaNumeros) {
+    soma += numero;
+    //mesmo que soma = soma + numero
+}
+
+console.log("numeros" , numeros)
+console.log("soma" , soma)
+
+
+const notas = [7.5, 8.8, 9.0, 6.5, 10];
+//utilize o for of e retorne a maoir nota da lista
+let maiorNota = notas[0]; // Inicializa com a primeira nota
+
+for (const nota of notas) {
+    if (nota > maiorNota) {
+        maiorNota = nota;
+    }
+}
+console.log("Maior nota:" , maiorNota)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
