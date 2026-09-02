@@ -16,13 +16,13 @@
 // console.log("codigo acabou.")
 
 // DO-WHILE: garante execução ao menos 1x
-let num = 10;
+/*let num = 10;
 console.log("isso NAO vai aparecer."); // intencional: mostra que o while não executaria
 do {
     console.log("isso VAI aparecer pelo menos 1x");
 } while (num < 5);
 
-// adivinhe o numero (fixo) */
+// adivinhe o numero (fixo) 
 const numerosecreto = 8;
 let palpiteEx1;
 let tentativasEx1 = 0;
@@ -60,9 +60,9 @@ do {
     } else if (palpite2 === numeroSecreto2) {
         console.log("acertou em " + tentativas2 + " tentativas.");
     } else if (palpite2 < numeroSecreto2) {
-        console.log("muito baixo");
+        alert("muito baixo");
     } else {
-        console.log("muito alto");
+        alert("muito alto");
     }
 } while (palpite2 !== numeroSecreto2);
 
@@ -202,7 +202,7 @@ for (let i = 2; i <= 50; i += 2) {
 //Se o palpite for menor que o número secreto, informe que o número é maior. 
 //Quando acertar, exiba uma mensagem de parabéns e encerre o programa.
 
-const numeroSecreto = Math.floor(Math.random() * 100 + 1);
+/*const numeroSecreto = Math.floor(Math.random() * 100 + 1);  
 let palpite = null;
 let tentativas = 0;
 
@@ -217,9 +217,9 @@ while (palpite !== numeroSecreto) {
     } else if (palpite === numeroSecreto) {
         console.log(`Parabéns! Você acertou em ${tentativas} tentativas!`);
     } else if (palpite < numeroSecreto) {
-        console.log("O número secreto é maior.");
+        alert("O número secreto é maior.");
     } else {
-        console.log("O número secreto é menor.");
+        alert("O número secreto é menor.");
     }
 } 
 
@@ -430,6 +430,16 @@ console.log("soma" , soma)
 const notas = [7.5, 8.8, 9.0, 6.5, 10];
 //utilize o for of e retorne a maoir nota da lista
 let maiorNota = notas[0]; // Inicializa com a primeira nota
+    //mesmo que soma = soma + numero
+}
+
+console.log("numeros" , numeros)
+console.log("soma" , soma)
+
+
+const notas = [7.5, 8.8, 9.0, 6.5, 10];
+//utilize o for of e retorne a maoir nota da lista
+let maiorNota = notas[0]; // Inicializa com a primeira nota
 
 for (const nota of notas) {
     if (nota > maiorNota) {
@@ -437,6 +447,349 @@ for (const nota of notas) {
     }
 }
 console.log("Maior nota:" , maiorNota)
+
+
+
+
+//- Cada informação tem um nome e um valor
+//PESSOA - ( Nome, idade, email, genero, cpf)
+
+const pessoa = {
+    nome: "João",
+    idade: 30,
+    email: "joao@email.com",
+    genero: "Masculino",
+    cpf: "123.456.789-00"
+};
+
+console.log(pessoa) //acessar todo o objeto
+console.log(pessoa.nome) //João
+console.log(pessoa.idade) //30
+
+
+
+
+//FOR IN
+
+for (const chave in pessoa) {
+
+//chave e o nome da propriedade do objeto
+//objeto [chave] e o valor da propriedade do objeto
+
+    console.log(chave, pessoa[chave])
+
+//para cada vez que o for percorrer, ele vai a 
+//CHAVE atual e retornar o valor que a chave representa
+
+
+}
+
+
+//objeto aluno que aguarde od dados de nome, matricula, curso, notas (array) e media (metodo)
+
+const aluno = {
+
+//sempre chave e valor
+
+nome: "ana",
+matricula: "123456",
+curso: "JavaScript",
+Notas: [9.5, ]
+};
+
+console.log("dados do aluno:\n")
+
+for (const chave in aluno) {
+    const valor = aluno[chave];
+    console.log("chave:  "+ chave + "  valor:  " + valor);
+}
+
+//lista de produto
+
+//informcao de produtos, precos, quantidade. 
+
+//array de objetos
+// cada item do array e um objetto
+
+
+const carrinho = [
+
+{produto: "camiseta", preco: 49.90, quantidade: 2},
+{produto: "calça", preco: 150.90, quantidade: 1},
+{produto: "tênis", preco: 199.90, quantidade: 1},
+
+
+
+]
+
+//For ..in --> objetos | retorna chaves / indices
+//For ..of --> arrays,strings | retorna valores
+
+for (const itemDomercado of carrinho) {
+
+    //retornar apenas o nome do produto e o preco
+
+console.log()
+
+
+
+}
+
+
+
+
+//- Cada informação tem um nome e um valor
+//PESSOA - ( Nome, idade, email, genero, cpf)
+
+const pessoa = {
+    nome: "João",
+    idade: 30,
+    email: "joao@email.com",
+    genero: "Masculino",
+    cpf: "123.456.789-00"
+};
+
+console.log(pessoa) //acessar todo o objeto
+console.log(pessoa.nome) //João
+console.log(pessoa.idade) //30
+
+
+
+
+//FOR IN
+
+for (const chave in pessoa) {
+
+//chave e o nome da propriedade do objeto
+//objeto [chave] e o valor da propriedade do objeto
+
+    console.log(chave, pessoa[chave])
+
+//para cada vez que o for percorrer, ele vai a 
+//CHAVE atual e retornar o valor que a chave representa
+
+
+}
+
+
+//objeto aluno que aguarde od dados de nome, matricula, curso, notas (array) e media (metodo)
+
+const aluno = {
+
+//sempre chave e valor
+
+nome: "ana",
+matricula: "123456",
+curso: "JavaScript",
+Notas: [9.5, ]
+};
+
+console.log("dados do aluno:\n")
+
+for (const chave in aluno) {
+    const valor = aluno[chave];
+    console.log("chave:  "+ chave + "  valor:  " + valor);
+}
+
+//lista de produto
+
+//informcao de produtos, precos, quantidade. 
+
+//array de objetos
+// cada item do array e um objetto
+
+
+const carrinho = [
+
+{produto: "camiseta", preco: 49.90, quantidade: 2},
+{produto: "calça", preco: 150.90, quantidade: 1},
+{produto: "tênis", preco: 199.90, quantidade: 1},
+
+
+
+]
+
+//For ..in --> objetos | retorna chaves / indices
+//For ..of --> arrays,strings | retorna valores
+
+for (const itemDomercado of carrinho) {
+
+    //retornar apenas o nome do produto e o preco
+
+console.log(itemDomercado.produto)
+console.log(itemDomercado.preco)
+
+
+}
+
+
+
+*/
+let naBrasa = [
+    {produto: "picanha", preco: 49.90, quantidade: 2},
+    {produto: "linguiça", preco: 150.90, quantidade: 1},
+    {produto: "fraldinha", preco: 199.90, quantidade: 1},
+]
+let valormaior = 0;
+for (const valormaior of naBrasa) {
+    if (valormaior > valormaior) {
+        valormaior = valormaior;
+    }
+}
+console.log("Valor maior:" , valormaior)
+
+for  (const calculo of naBrasa) {
+
+    //retornar apenas o nome do produto e o preco
+
+console.log(calculo.produto)
+console.log(calculo.preco)
+
+//exibir o valor total de cada produto (preco * quantidade)
+
+const valorTotal = calculo.preco * calculo.quantidade;
+console.log("Valor total do produto: " + valorTotal);
+
+//ao final, informar qual item teve o maior valor total, considerando a quantidade comprada.
+
+console.log(calculo.produto + "" | "-- VALOR TOTAL ITEM:" + calculo.preco * calculo.quantidade);
+
+
+}
+
+const nomes = ["guilherme", "lailton", "rita", "miguel, michael jackson", "maria", "joao", "ana", "carlos", "diana", "bruno"];
+
+nomes.reverse(); //inverte a ordem dos elementos
+
+console.log( nomes) //reverse e destrutivo, ele modifica o array original.
+
+
+
+//uma escola possui uma lista de alunos com suas respectivas notas.
+//considere que a nota minima de cada aluno para ser aprovado e 7.0.
+
+//1. crie um array de objetos, chamados "aluno"
+//2. cada objeto deve conter possuir  as propriesades: nome e nota
+//percorra todos os alunos utilizando o for of
+//caso a nota seja menor que 7, utikize o continue para pular para o proximo aluno
+//exiba no console somente os alunos aprovados, com a seguinte mensagem: "Parabéns [nome do aluno], você foi aprovado(a) com nota [nota do aluno]!"
+
+const alunos = [
+    { nome: "Ana", nota: 8.5 },
+    { nome: "João", nota: 6.0 },
+    { nome: "Maria", nota: 9.0 },
+    { nome: "Pedro", nota: 7.5 }
+];
+
+for (const aluno of alunos) {
+    if (aluno.nota < 7.0) {
+        continue;
+    }
+    alert(`Parabéns ${aluno.nome}, você foi aprovado(a) com nota ${aluno.nota}!`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
