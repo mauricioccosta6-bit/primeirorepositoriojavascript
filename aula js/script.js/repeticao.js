@@ -21,8 +21,10 @@ console.log("isso NAO vai aparecer."); // intencional: mostra que o while não e
 do {
     console.log("isso VAI aparecer pelo menos 1x");
 } while (num < 5);
+*/
 
-// adivinhe o numero (fixo) 
+// adivinhe o numero (fixo)
+/* 
 const numerosecreto = 8;
 let palpiteEx1;
 let tentativasEx1 = 0;
@@ -222,6 +224,7 @@ while (palpite !== numeroSecreto) {
         alert("O número secreto é menor.");
     }
 } 
+*/
 
 
 
@@ -242,7 +245,7 @@ while (palpite !== numeroSecreto) {
 //2
 //1
 //0
-
+/*
 const numero6 = Number(prompt("Digite um número para contagem regressiva:"));
 if (Number.isNaN(numero6)) {
     console.log("Número inválido.");
@@ -426,19 +429,8 @@ for (const numero of listaNumeros) {
 console.log("numeros" , numeros)
 console.log("soma" , soma)
 
-
+//utilize o for of e retorne a maior nota da lista
 const notas = [7.5, 8.8, 9.0, 6.5, 10];
-//utilize o for of e retorne a maoir nota da lista
-let maiorNota = notas[0]; // Inicializa com a primeira nota
-    //mesmo que soma = soma + numero
-}
-
-console.log("numeros" , numeros)
-console.log("soma" , soma)
-
-
-const notas = [7.5, 8.8, 9.0, 6.5, 10];
-//utilize o for of e retorne a maoir nota da lista
 let maiorNota = notas[0]; // Inicializa com a primeira nota
 
 for (const nota of notas) {
@@ -624,7 +616,7 @@ console.log(itemDomercado.preco)
 
 
 
-*/
+
 let naBrasa = [
     {produto: "picanha", preco: 49.90, quantidade: 2},
     {produto: "linguiça", preco: 150.90, quantidade: 1},
@@ -687,8 +679,6 @@ for (const aluno of alunos) {
     }
     alert(`Parabéns ${aluno.nome}, você foi aprovado(a) com nota ${aluno.nota}!`);
 }
-
-
 
 
 
